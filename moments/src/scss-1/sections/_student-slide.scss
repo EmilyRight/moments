@@ -1,0 +1,247 @@
+.girl {
+  pointer-events: none;
+  .slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 23rem;
+      height: 70%;
+      pointer-events: all;
+    }
+    &__img-box {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .images {
+      bottom: -12%;
+      left: 0rem;
+      .image-box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+          display: block;
+          height: 100%;
+          align-self: flex-end;
+          user-select: none;
+          pointer-events: none;
+        }
+      }
+      .image-box_absolute {
+        bottom: -1px;
+        align-self: flex-end;
+        height: 100%;
+        position: absolute;
+      }
+      &__coffee-img {
+        z-index: 10;
+        &::before {
+          position: absolute;
+          content: "";
+
+          background-color: $color-orange;
+          border-radius: 50%;
+          will-change: filter;
+          filter: blur(10px);
+          opacity: 0;
+          transition: 0.4s;
+          width: 19%;
+          height: 14%;
+          max-width: 10rem;
+          bottom: 71%;
+          left: 10%;
+          transform: rotate(20deg);
+          z-index: -1;
+          animation: blinking 2s linear 0s infinite normal forwards;
+        }
+      }
+      &__hand-img {
+        z-index: 8;
+      }
+    }
+
+    &__tooltip-block {
+      position: absolute;
+      width: 19%;
+      height: 15%;
+      max-width: 10rem;
+      bottom: 58%;
+      left: 10%;
+      z-index: 12;
+    }
+  }
+
+  .tooltip-block {
+    &__tooltip-icon {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    &.girl-tooltip {
+      transform: rotate(20deg);
+      .tooltip {
+        left: -25%;
+        top: 80%;
+        transform: rotate(-20deg);
+      }
+    }
+
+    &.pack-tooltip {
+      transform: rotate(20deg);
+      .tooltip {
+        left: -25%;
+        top: 80%;
+        transform: rotate(-20deg);
+      }
+    }
+  }
+
+  .text-popup {
+    top: -3vh;
+    left: -15%;
+    width: 70vw;
+    max-width: 27.3rem;
+    &::after {
+      bottom: -1rem;
+      left: 35%;
+    }
+  }
+
+  .tooltip__text {
+    pointer-events: none;
+  }
+  @media (min-width: 768px) {
+    .slide-content {
+      &__wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 27.2rem;
+        height: 40vw;
+        max-height: 55rem;
+        // border: 1px solid red;
+        // bottom: -25rem;
+      }
+      &__img-box {
+        max-width: 100%;
+      }
+
+      .images {
+        bottom: -10rem;
+        .images {
+          .image-box {
+            height: 100%;
+            width: 100%;
+            img {
+              display: block;
+              height: auto;
+              width: 100%;
+            }
+          }
+        }
+        .image-box_absolute {
+          bottom: 0px;
+        }
+      }
+
+      &__tooltip-block {
+        --size: 18%;
+      }
+    }
+
+    .tooltip-block {
+      &.girl-tooltip {
+        bottom: 52%;
+        left: 11%;
+        .tooltip {
+          left: -9rem;
+        }
+      }
+    }
+
+    .text-popup {
+      top: 7vh;
+      left: auto;
+      right: -70%;
+      max-width: 25rem;
+
+      &::after {
+        width: 2rem;
+        height: 3rem;
+        bottom: -0.7rem;
+        left: -0.3rem;
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    .slide-content {
+      &__wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 22.2rem;
+        height: 40vw;
+        max-height: 37rem;
+        // bottom: -25rem;
+      }
+      &__img-box {
+        max-width: 100%;
+      }
+
+      .images {
+        bottom: -10rem;
+        .image-box {
+          height: auto;
+          width: 100%;
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+        .image-box_absolute {
+          bottom: 0px;
+        }
+      }
+
+      &__tooltip-block {
+        --size: 18%;
+      }
+    }
+
+    .tooltip-block {
+      &.girl-tooltip {
+        bottom: 63%;
+        left: 11%;
+        .tooltip {
+          left: -9rem;
+        }
+      }
+    }
+
+    .text-popup {
+      top: -14vh;
+      left: auto;
+      right: -60%;
+      max-width: 20rem;
+
+      &::after {
+        width: 2rem;
+        height: 3rem;
+        bottom: -0.7rem;
+        left: -0.3rem;
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      }
+    }
+  }
+}
