@@ -1,225 +1,227 @@
 .section-slider {
-  .modal-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    display: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  &.visible {
-    animation: showElement 1s normal 0s 1 linear forwards;
-  }
-  .modal {
-    padding: 0rem;
-    height: 100%;
-    .popup-modal {
-      min-height: 100%;
-      padding: 2.2vh 1.8rem;
-      background-color: rgb(255, 240, 233);
-      position: relative;
+  @media only screen and (min-height: 150px) {
+    .modal-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
       z-index: 100;
-      display: flex;
-    }
-    &.modal-hidden {
       display: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-
-    .modal-box {
-      flex-basis: 100%;
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      &__title {
-        margin: 0;
-        font-size: 3.5vh;
-        line-height: 110%;
-        margin-bottom: 2vh;
+    &.visible {
+      animation: showElement 1s normal 0s 1 linear forwards;
+    }
+    .modal {
+      padding: 0rem;
+      height: 100%;
+      .popup-modal {
+        min-height: 100%;
+        padding: 2.2vh 1.8rem;
+        background-color: rgb(255, 240, 233);
+        position: relative;
+        z-index: 100;
+        display: flex;
       }
-      &__close-icon {
-        cursor: pointer;
+      &.modal-hidden {
         display: none;
       }
-    }
 
-    .btn {
-      margin: 0;
-      @include btn;
-    }
-
-    .modal-body {
-      margin-bottom: 2.2vh;
-      &__text {
-        margin-bottom: 2vh;
-        font-size: 2vh;
-        font-style: normal;
-        font-family: $font1;
-        font-weight: 400;
-        line-height: 134%;
-      }
-
-      &__buttons {
+      .modal-box {
+        flex-basis: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 0.8vh;
-
-        .btn:first-of-type {
-          background-color: $color-orange;
-          color: #fff;
-          border: 2px solid $color-orange;
-          padding: 1.7vh;
+        min-height: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        &__title {
+          margin: 0;
+          font-size: 3.5vh;
+          line-height: 110%;
+          margin-bottom: 2vh;
         }
-        .btn:nth-of-type(2) {
-          @include btn_transparent;
-          border: 2px solid #000;
-          padding: 1.7vh;
-        }
-
-        .btn {
-          width: 100%;
-        }
-      }
-    }
-
-    .link {
-      font-family: $font1;
-    }
-    .logo {
-      display: block;
-      width: 7vh;
-      margin-bottom: 2vh;
-      img {
-        display: block;
-        width: 100%;
-      }
-    }
-    .footer {
-      font-family: $font1;
-      flex-basis: 100%;
-      display: flex;
-      flex-direction: column;
-
-      &__image-area {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 14vh;
-        margin: 0 auto;
-        position: relative;
-        margin-bottom: 0;
-      }
-      &__image {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
-        pointer-events: none;
-        margin-bottom: 4vh;
-        img {
-          display: block;
-          height: 100%;
-        }
-        &_absolute {
-          position: absolute;
-          width: 100%;
-          bottom: 0;
-          left: 0;
+        &__close-icon {
+          cursor: pointer;
+          display: none;
         }
       }
 
-      &-glass {
-        transition: 0.4s;
-        height: 6vh;
-        max-height: 7rem;
-        &.animated {
-          animation: glass 1s linear 1 normal forwards;
+      .btn {
+        margin: 0;
+        @include btn;
+      }
+
+      .modal-body {
+        margin-bottom: 2.2vh;
+        &__text {
+          margin-bottom: 2vh;
+          font-size: 2.2vh;
+          font-style: normal;
+          font-family: $font1;
+          font-weight: 400;
+          line-height: 134%;
         }
-      }
 
-      &-steam {
-        transform-origin: bottom 65%;
-        animation: steam2 3s linear infinite normal forwards;
-      }
-      &__box-content {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-        color: $color-gray0;
-        font-size: 1.69vh;
-        line-height: 159%;
-        font-family: $font1;
-      }
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.8vh;
 
-      &__copyrights {
-      }
+          .btn:first-of-type {
+            background-color: $color-orange;
+            color: #fff;
+            border: 2px solid $color-orange;
+            padding: 1.7vh;
+          }
+          .btn:nth-of-type(2) {
+            @include btn_transparent;
+            border: 2px solid #000;
+            padding: 1.7vh;
+          }
 
-      &__rules {
-        .text-link {
-          text-decoration: underline;
-          color: $color-gray0;
-          &:hover {
-            text-decoration: none;
+          .btn {
+            width: 100%;
           }
         }
       }
-    }
-    .share {
-      margin-bottom: 4vh;
-      &__text {
+
+      .link {
+        font-family: $font1;
+      }
+      .logo {
+        display: block;
+        width: 7vh;
+        margin-bottom: 2vh;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .footer {
+        font-family: $font1;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__image-area {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 14vh;
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 0;
+        }
+        &__image {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          pointer-events: none;
+          margin-bottom: 4vh;
+          img {
+            display: block;
+            height: 100%;
+          }
+          &_absolute {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        &-glass {
+          transition: 0.4s;
+          height: 6vh;
+          max-height: 7rem;
+          &.animated {
+            animation: glass 1s linear 1 normal forwards;
+          }
+        }
+
+        &-steam {
+          transform-origin: bottom 65%;
+          animation: steam2 3s linear infinite normal forwards;
+        }
+        &__box-content {
+          width: 100%;
+          max-width: 100%;
+          text-align: center;
+          color: $color-gray0;
+          font-size: 1.69vh;
+          line-height: 159%;
+          font-family: $font1;
+        }
+
+        &__copyrights {
+        }
+
+        &__rules {
+          .text-link {
+            text-decoration: underline;
+            color: $color-gray0;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .share {
+        margin-bottom: 4vh;
+        &__text {
+          text-align: center;
+          font-family: $font1;
+          color: var(--gray-day-600, #65707b);
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &__links-list {
+          display: flex;
+          justify-content: center;
+          gap: 1.6rem;
+          position: relative;
+          z-index: 20;
+        }
+      }
+      .links {
+        &__item {
+          cursor: pointer;
+          // width: 4.3rem;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .copy-icon {
+      }
+      .copy-tooltip {
+        position: absolute;
+        background-color: #fff;
+        pointer-events: none;
+        bottom: -4.5rem;
+        padding: 1.2rem;
         text-align: center;
         font-family: $font1;
         color: var(--gray-day-600, #65707b);
         font-size: 1.3rem;
+        border-radius: 1.2rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      &__links-list {
-        display: flex;
-        justify-content: center;
-        gap: 1.6rem;
-        position: relative;
-        z-index: 20;
-      }
-    }
-    .links {
-      &__item {
-        cursor: pointer;
-        // width: 4.3rem;
-        img {
-          display: block;
-          width: 100%;
+        opacity: 0;
+        transition: 0.4s;
+        max-width: none;
+        width: fit-content;
+        &.opened {
+          opacity: 1;
         }
-      }
-    }
-    .copy-icon {
-    }
-    .copy-tooltip {
-      position: absolute;
-      background-color: #fff;
-      pointer-events: none;
-      bottom: -4.5rem;
-      padding: 1.2rem;
-      text-align: center;
-      font-family: $font1;
-      color: var(--gray-day-600, #65707b);
-      font-size: 1.3rem;
-      border-radius: 1.2rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.8rem;
-      opacity: 0;
-      transition: 0.4s;
-      max-width: none;
-      width: fit-content;
-      &.opened {
-        opacity: 1;
       }
     }
   }
