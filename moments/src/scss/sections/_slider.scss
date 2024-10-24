@@ -41,7 +41,7 @@
 
     &_mobile {
       display: block;
-      padding-top: 3.4rem;
+      padding-top: 1.5vh;
     }
     &_desktop {
       display: none;
@@ -77,10 +77,10 @@
       background-image: url("../img/page/bgmain-mobile.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      background-position: 0 30%;
+      background-position: 0 1vh;
       left: 0;
       bottom: 0vw;
-      width: 300%;
+      width: 305%;
     }
   }
   .swiper-slide {

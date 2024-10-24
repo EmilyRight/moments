@@ -1,6 +1,5 @@
 import detectDevice from './helpers/detectDevice';
 import { WOW } from './vendor/wow.min';
-import videoTeaser from './helpers/videoTeaser';
 import Page from './components/Page';
 import GTMEvents from './helpers/gtmEvents';
 
@@ -21,7 +20,6 @@ let pageView;
 
 document.addEventListener('DOMContentLoaded', () => {
   detectDevice();
-  videoTeaser();
   setPageHeight();
   page = document.querySelector('.page');
   pageView = new Page(page, GTM);

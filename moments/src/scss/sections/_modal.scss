@@ -15,7 +15,7 @@
     height: 100%;
     .popup-modal {
       min-height: 100%;
-      padding: 2.4rem 1.8rem;
+      padding: 2.9vh 1.8rem;
       background-color: rgb(255, 240, 233);
       position: relative;
       z-index: 100;
@@ -34,9 +34,9 @@
       padding-left: 1rem;
       &__title {
         margin: 0;
-        margin-top: 1.6rem;
         font-size: 2.8rem;
         line-height: 2.94rem;
+        margin-bottom: 2.2vh;
       }
       &__close-icon {
         cursor: pointer;
@@ -50,28 +50,37 @@
     }
 
     .modal-body {
-      margin-bottom: 3.6rem;
+      margin-bottom: 4.5vh;
       &__text {
-        margin-top: 1.6rem;
-        margin-bottom: 1.6rem;
-        font-size: 1.6rem;
+        margin-bottom: 2.2vh;
+        font-size: 2vh;
         font-style: normal;
         font-family: $font1;
         font-weight: 400;
-        line-height: 2.2rem;
+        line-height: 134%;
       }
 
       &__buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: .8rem;
-        .btn {
-          width: 100%;
-        }
+        gap: 0.8vh;
+
         .btn:first-of-type {
           background-color: $color-orange;
           color: #fff;
+          border: 2px solid $color-orange;
+          padding: 1.7vh;
+        }
+        .btn:nth-of-type(2) {
+          @include btn_transparent;
+          border: 2px solid #000;
+          padding: 1.7vh;
+        }
+
+        .btn {
+          width: 100%;
+
         }
       }
     }
@@ -81,7 +90,8 @@
     }
     .logo {
       display: block;
-      width: 5rem;
+      width: 6rem;
+      margin-bottom: 2.2vh;
       img {
         display: block;
         width: 100%;
@@ -97,8 +107,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 18vh;
-        // max-height: 37.5rem;
+        height: 14vh;
         margin: 0 auto;
         position: relative;
       }
@@ -123,7 +132,7 @@
 
       &-glass {
         transition: 0.4s;
-        height: 9vh;
+        height: 6vh;
         max-height: 7rem;
         &.animated {
           animation: glass 1s linear 1 normal forwards;
@@ -211,6 +220,8 @@
     }
   }
   @media (min-width: 768px) {
+    .popup-modal {
+    }
     .modal-icon {
       position: absolute;
       width: 10rem;
@@ -225,7 +236,7 @@
       z-index: 100;
       box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
       cursor: pointer;
-      transition: .4s;
+      transition: 0.4s;
       &.shown {
         right: 17%;
       }
@@ -260,11 +271,14 @@
 
       .popup-modal {
         z-index: 100;
-        max-width: 73.2rem;
+        max-width: 92.2rem;
         padding: 0;
-        height: 40rem;
+        height: 45rem;
         min-height: auto;
         background: var(--white-general, #fff);
+        border-radius: 1.6rem;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px 0px #3d3d3d1f;
       }
       .logo {
         display: none;
@@ -275,18 +289,21 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
-        border: 1px solid var(--black-general, #1f2229);
+
+        border: none;
+        padding: 0;
+
         &__header {
           position: relative;
         }
 
         &__title {
           margin: 0;
-          margin-bottom: 2.4rem;
-          font-size: 28px;
+          margin-bottom: 1.6rem;
+          font-size: 2.8rem;
           font-style: normal;
           font-weight: 700;
-          line-height: 36px;
+          line-height: 2.94rem;
         }
 
         &__close-icon {
@@ -329,11 +346,17 @@
       .modal-body {
         margin-bottom: 3.6rem;
         &__text {
-          margin-top: 1.8rem;
           margin-bottom: 2.4rem;
+          font-size: 1.6rem;
+          line-height: 2.08rem;
         }
         &__buttons {
           gap: 2.5rem;
+          flex-direction: row;
+
+          .btn {
+            max-width: fit-content;
+          }
         }
       }
       .footer {

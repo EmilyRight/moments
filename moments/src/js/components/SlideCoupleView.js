@@ -46,50 +46,26 @@ class SlideCoupleView extends SlideView {
             />
           </div>
           <div class="slide-content__tooltip-block tooltip-block man-tooltip">
-          <div
-            class="js-gtm-event tooltip-block__tooltip-icon tooltip-icon"
-            data-tooltip="pair-man"
-            data-event="cup-pair"></div>
-          <div class="tooltip-block__tooltip tooltip" id="pair-man">
-            <div class="tooltip__text">
-              <ul class="tooltip-list">
-                <li class="tooltip-list__item">
-                  Капучино&nbsp;классический&nbsp;220&nbsp;мл
-                </li>
-                <li class="tooltip-list__item">
-                  Американо&nbsp;250&nbsp;мл
-                </li>
-              </ul>
-            </div>
-            <div class="tooltip__close-icon tooltip-icon" data-tooltip="pair-man">
-              <span class="close"></span>
-            </div>
-          </div>
-        </div>
-        <div class="slide-content__tooltip-block tooltip-block woman-tooltip">
-        <div
-        class="js-gtm-event tooltip-block__tooltip-icon tooltip-icon"
-        data-tooltip="pair-woman"
-        data-event="cup-pair"></div>
-          <div
-            class="tooltip-block__tooltip tooltip"
-            id="pair-woman"
-          >
-            <div class="tooltip__text">
-              <ul class="tooltip-list">
-                <li class="tooltip-list__item">
-                  Капучино&nbsp;классический&nbsp;220&nbsp;мл
-                </li>
-                <li class="tooltip-list__item">
-                  Американо&nbsp;250&nbsp;мл
-                </li>
-              </ul>
-            </div>
-            <div class="tooltip__close-icon tooltip-icon" data-tooltip="pair-woman">
-              <span class="close"></span>
+            <div
+              class="js-gtm-event tooltip-block__tooltip-icon tooltip-icon"
+              data-tooltip="pair-man"
+              data-event="cup-pair"></div>
+            <div class="tooltip-block__tooltip tooltip" id="pair-man">
+              <div class="tooltip__text">
+                <ul class="tooltip-list">
+                  <li class="tooltip-list__item">
+                    Капучино&nbsp;классический&nbsp;350&nbsp;мл
+                  </li>
+                  <li class="tooltip-list__item">
+                    Американо&nbsp;300&nbsp;мл
+                  </li>
+                </ul>
+              </div>
+              <div class="tooltip__close-icon tooltip-icon" data-tooltip="pair-man">
+                <span class="close"></span>
+              </div>
             </div>
           </div>
-        </div>
         </div>
         <div class="slide-content__popup man-popup text-popup">
           Гуляли по&nbsp;Питеру, любовались осенним городом, взяли

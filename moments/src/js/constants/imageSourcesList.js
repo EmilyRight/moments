@@ -16,6 +16,7 @@ const imageSourcesList = {
   studentSrc: require('../../img/page/student.svg'),
   studentCoffee: require('../../img/page/students-coffee2.svg'),
   studentHand: require('../../img/page/students-hand2.svg'),
+  studentFinger: require('../../img/page/students-finger.svg'),
 
   arrowSrc: require('../../img/icons/Expander.svg'),
 

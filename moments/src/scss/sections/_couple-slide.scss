@@ -66,11 +66,6 @@
           z-index: -1;
         }
 
-        &::before {
-          bottom: 48%;
-          left: 37%;
-          animation: blinking 3s linear 0s infinite normal forwards;
-        }
         &::after {
           bottom: 28%;
           left: 43%;
@@ -102,17 +97,11 @@
       transform: translateX(-1%);
 
       .tooltip {
-        left: -14rem;
+        left: -13rem;
+        top: 82%;
       }
     }
 
-    &.woman-tooltip {
-      bottom: 48%;
-      left: 38%;
-      .tooltip {
-        left: -14rem;
-      }
-    }
   }
 
   .man-popup {

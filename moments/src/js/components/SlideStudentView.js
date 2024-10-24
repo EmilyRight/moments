@@ -52,6 +52,15 @@ class SlideStudentView extends SlideView {
               class="images__hand hand-image"
             />
           </div>
+                    <div
+            class="image-box image-box_absolute images__finger-img"
+          >
+            <img
+              src=${imageSourcesList.studentFinger}
+              alt=""
+              class="images__finger finger-image"
+            />
+          </div>
         </div>
         <div class="slide-content__popup text-popup">
           Ух&nbsp;ты,

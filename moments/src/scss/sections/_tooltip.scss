@@ -4,9 +4,10 @@
   position: absolute;
   // display: none;
   opacity: 0;
-  padding: 1.2rem 1.2rem 1.2rem 2.6rem;
+  padding: 1.4vh 1.2rem 1.4vh 2.6rem;
   font-family: $font1;
   font-size: 1.4rem;
+  font-size: 1.7vh;
   font-style: normal;
   color: #fff;
   font-weight: 400;
@@ -19,8 +20,10 @@
   pointer-events: none;
   transition: 0.4s;
   display: flex;
+  min-height: 4rem;
   @media (min-width: 767px) {
     font-size: 1.4rem;
+    padding: 1.2rem 1.2rem 1.2rem 2.6rem;
   }
   &.opened {
     z-index: 10;
@@ -45,10 +48,11 @@
   }
   &__text {
     margin-right: 2rem;
+    line-height: normal;
   }
   &__close-icon {
     min-width: 2.4rem;
-    max-height: 2.4rem;
+    height: 2.4rem;
     background-color: #ffffff1d;
     // position: absolute;
     // top: 1.2rem;
