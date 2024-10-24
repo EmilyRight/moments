@@ -15,7 +15,7 @@
     height: 100%;
     .popup-modal {
       min-height: 100%;
-      padding: 2.9vh 1.8rem;
+      padding: 2.5vh 1.8rem;
       background-color: rgb(255, 240, 233);
       position: relative;
       z-index: 100;
@@ -34,9 +34,9 @@
       padding-left: 1rem;
       &__title {
         margin: 0;
-        font-size: 2.8rem;
-        line-height: 2.94rem;
-        margin-bottom: 2.2vh;
+        font-size: 3.5vh;
+        line-height: 110%;
+        margin-bottom: 2vh;
       }
       &__close-icon {
         cursor: pointer;
@@ -50,10 +50,10 @@
     }
 
     .modal-body {
-      margin-bottom: 3vh;
+      margin-bottom: 2.5vh;
       &__text {
-        margin-bottom: 2.2vh;
-        font-size: 2vh;
+        margin-bottom: 2vh;
+        font-size: 2.2vh;
         font-style: normal;
         font-family: $font1;
         font-weight: 400;
@@ -106,7 +106,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 16vh;
+        height: 14vh;
         margin: 0 auto;
         position: relative;
         margin-bottom: 0;
@@ -168,7 +168,7 @@
       }
     }
     .share {
-      margin-bottom: 5vh;
+      margin-bottom: 4vh;
       &__text {
         text-align: center;
         font-family: $font1;
