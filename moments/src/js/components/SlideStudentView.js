@@ -71,7 +71,7 @@ class SlideStudentView extends SlideView {
             data-event="conv_minutes"
             >до&nbsp;1800 минут</a
           > на&nbsp;кофе!
-        Это&nbsp;же шесть чашек &mdash;и&nbsp;себе можно взять, и&nbsp;друзей угостить.
+        Это&nbsp;же шесть чашек &mdash; и&nbsp;себе можно взять, и&nbsp;друзей угостить.
         <br/>Для прогулки есть кофе на&nbsp;альтернативном молоке, а&nbsp;для дома&nbsp;&mdash; дрип-пакеты.
         </div>
         <div

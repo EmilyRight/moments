@@ -104,7 +104,6 @@
     &.man-tooltip {
       bottom: 33%;
       left: 46%;
-
       transform: translateX(-1%);
       .tooltip {
         left: -4rem;
@@ -171,7 +170,9 @@
         left: 44%;
         transform: translateX(-1%);
         .tooltip {
-          left: -9rem;
+          left: -4rem;
+          max-width: 23rem;
+          align-items: center;
         }
       }
     }
@@ -183,10 +184,10 @@
       max-width: 26rem;
       padding: 1.2rem 1.6rem;
       &::after {
-        width: 2rem;
-        height: 3rem;
-        bottom: -0.6rem;
-        left: -1rem;
+        width: 1.8rem;
+        height: 2.8rem;
+        bottom: -0.9rem;
+        left: -0.3rem;
         clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
       }
     }
@@ -229,8 +230,8 @@
         bottom: 38%;
         left: 44%;
         transform: translateX(-1%);
-        .tooltip {
-          left: -9rem;
+        &::before {
+          left: 25%;
         }
       }
     }

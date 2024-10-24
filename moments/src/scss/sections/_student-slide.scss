@@ -113,7 +113,7 @@
         left: -66%;
         transform: rotate(-20deg);
         &::before {
-          left: 20%;
+          left: 36%;
         }
       }
     }
@@ -193,7 +193,11 @@
         bottom: 52%;
         left: 11%;
         .tooltip {
-          left: -9rem;
+          left: -2rem;
+          top: 4rem;
+          &::before {
+            left: 20%;
+          }
         }
       }
     }
@@ -252,7 +256,8 @@
         bottom: 63%;
         left: 11%;
         .tooltip {
-          left: -9rem;
+          left: -2rem;
+          top: 1rem;
         }
       }
     }

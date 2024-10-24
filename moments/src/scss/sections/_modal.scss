@@ -50,7 +50,7 @@
     }
 
     .modal-body {
-      margin-bottom: 4.5vh;
+      margin-bottom: 3vh;
       &__text {
         margin-bottom: 2.2vh;
         font-size: 2vh;
@@ -90,7 +90,7 @@
     }
     .logo {
       display: block;
-      width: 6rem;
+      width: 7.6vh;
       margin-bottom: 2.2vh;
       img {
         display: block;
@@ -102,7 +102,7 @@
       flex-basis: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+
       &__image-area {
         display: flex;
         align-items: center;
@@ -110,6 +110,7 @@
         height: 14vh;
         margin: 0 auto;
         position: relative;
+        margin-bottom: 3.7vh;
       }
       &__image {
         height: 100%;
@@ -118,6 +119,7 @@
         justify-content: center;
         user-select: none;
         pointer-events: none;
+        margin-bottom: 4vh;
         img {
           display: block;
           height: 100%;
@@ -148,8 +150,8 @@
         max-width: 100%;
         text-align: center;
         color: $color-gray0;
-        font-size: 1.6rem;
-        line-height: 1.38;
+        font-size: 1.69vh;
+        line-height: 159%;
         font-family: $font1;
       }
 
@@ -214,12 +216,16 @@
       opacity: 0;
       transition: 0.4s;
       max-width: none;
+      width: fit-content;
       &.opened {
         opacity: 1;
       }
     }
   }
   @media (min-width: 768px) {
+    br {
+      display: none;
+    }
     .popup-modal {
     }
     .modal-icon {
@@ -258,7 +264,7 @@
       align-items: center;
       justify-content: center;
       &__container {
-        padding: 3.2rem 3.6rem 0 3.2rem;
+        padding: 2.4rem 4rem 0 3.2rem;
       }
       &__body {
       }
@@ -271,9 +277,9 @@
 
       .popup-modal {
         z-index: 100;
-        max-width: 92.2rem;
+        max-width: 73rem;
         padding: 0;
-        height: 45rem;
+        min-height: 35rem;
         min-height: auto;
         background: var(--white-general, #fff);
         border-radius: 1.6rem;
@@ -299,7 +305,7 @@
 
         &__title {
           margin: 0;
-          margin-bottom: 1.6rem;
+          margin-bottom: 1.3rem;
           font-size: 2.8rem;
           font-style: normal;
           font-weight: 700;
@@ -344,19 +350,24 @@
         }
       }
       .modal-body {
-        margin-bottom: 3.6rem;
+        margin-bottom: 3.2rem;
         &__text {
           margin-bottom: 2.4rem;
           font-size: 1.6rem;
           line-height: 2.08rem;
+          max-width: 90%;
         }
         &__buttons {
-          gap: 2.5rem;
+          gap: 1.8rem;
           flex-direction: row;
 
           .btn {
             max-width: fit-content;
           }
+           .btn:first-of-type, .btn:nth-of-type(2) {
+              padding: 1.6rem 2.4rem;
+           }
+
         }
       }
       .footer {
@@ -369,10 +380,8 @@
         align-items: center;
         align-self: flex-end;
         background-color: #edf0f2;
-        padding: 1.7rem;
+        padding: 2.4rem 4rem 2.4rem 3.2rem;
         &__share-block {
-          margin-bottom: 0;
-          margin-left: 3rem;
         }
 
         &__image-area {
@@ -407,7 +416,8 @@
         }
       }
       .copy-tooltip {
-        bottom: -7rem;
+        bottom: 5rem;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
       }
     }
   }
