@@ -80,7 +80,6 @@
 
         .btn {
           width: 100%;
-
         }
       }
     }
@@ -107,10 +106,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 14vh;
+        height: 16vh;
         margin: 0 auto;
         position: relative;
-        margin-bottom: 3.7vh;
+        margin-bottom: 0;
       }
       &__image {
         height: 100%;
@@ -169,6 +168,7 @@
       }
     }
     .share {
+      margin-bottom: 5vh;
       &__text {
         text-align: center;
         font-family: $font1;
@@ -185,12 +185,13 @@
         justify-content: center;
         gap: 1.6rem;
         position: relative;
+        z-index: 20;
       }
     }
     .links {
       &__item {
         cursor: pointer;
-        width: 4.3rem;
+        // width: 4.3rem;
         img {
           display: block;
           width: 100%;
@@ -364,10 +365,10 @@
           .btn {
             max-width: fit-content;
           }
-           .btn:first-of-type, .btn:nth-of-type(2) {
-              padding: 1.6rem 2.4rem;
-           }
-
+          .btn:first-of-type,
+          .btn:nth-of-type(2) {
+            padding: 1.6rem 2.4rem;
+          }
         }
       }
       .footer {
