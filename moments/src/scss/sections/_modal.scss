@@ -155,9 +155,6 @@
           font-family: $font1;
         }
 
-        &__copyrights {
-        }
-
         &__rules {
           .text-link {
             text-decoration: underline;
@@ -169,7 +166,6 @@
         }
       }
       .share {
-        margin-bottom: 4vh;
         &__text {
           text-align: center;
           font-family: $font1;
@@ -192,15 +188,13 @@
       .links {
         &__item {
           cursor: pointer;
-          // width: 4.3rem;
           img {
             display: block;
             width: 100%;
           }
         }
       }
-      .copy-icon {
-      }
+
       .copy-tooltip {
         position: absolute;
         background-color: #fff;
